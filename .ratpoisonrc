@@ -1,0 +1,20 @@
+# setup default environment
+exec xsetroot -solid black
+exec xsetroot -cursor_name left_ptr
+exec xset s off
+exec xset -dpms
+exec xset -b
+
+# ratpoison options
+startup_message off
+
+escape C-t
+unbind c
+
+# our preferred debug terminal
+alias xterm exec xterm -fg white -bg black -cr grey -ah +bc +mb +sb -uc +vb
+bind t xterm
+
+# node-webkit
+alias nw exec nw http://127.0.0.1/client
+nw
